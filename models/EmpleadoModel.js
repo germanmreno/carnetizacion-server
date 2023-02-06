@@ -2,7 +2,7 @@ import db from "../database/db.js";
 
 import { DataTypes } from "sequelize";
 
-const EmpleadoModel = db.define("empleadospruebas", {
+const EmpleadoModel = db.define("empleados", {
   nombres: { type: DataTypes.STRING, unique: false },
   apellidos: {type: DataTypes.STRING, unique: false},
   cedula: { type: DataTypes.STRING, allowNull: false, unique: true },
